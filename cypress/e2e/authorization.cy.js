@@ -50,7 +50,7 @@ describe('Тестирование формы авторизации', function 
         cy.get('#mail').type('GerMan@Dolnikov.ru');
         cy.get('#pass').type('iLoveqastudio1');
         cy.get('#loginButton').click();
-        cy.get('#messageHeader').contains('Такого логина или пароля нет');
+        cy.get('#messageHeader').contains('Нужно исправить проблему валидации');
         cy.get('#exitMessageButton > .exitIcon').should('be.visible'); 
     })
 })
